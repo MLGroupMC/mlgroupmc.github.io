@@ -1,0 +1,11 @@
+RewriteEngine on
+Options -Indexes
+
+RewriteRule ^home events.html [NC,L]
+RewriteRule ^index events.html [NC,L]
+RewriteRule ^events events.html [NC,L]
+RewriteRule ^conditions conditions.html [NC,L]
+RewriteRule ^expressions expressions.html [NC,L]
+RewriteRule ^effects effects.html [NC,L]
+RewriteRule ^vartypes types.html [NC,L]
+RewriteRule ^types types.html [NC,L]
