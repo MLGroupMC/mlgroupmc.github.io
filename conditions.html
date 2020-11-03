@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<!-- Mirrored from peridot.ct8.pl/funnyskaddon/conditions by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 09:41:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <title>FunnySkAddon - Dokumentacja - Warunki</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+
+    <!-- Material Kit & Material Design -->
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    <link href="assets/css/mdb.css" rel="stylesheet"/>
+
+    <!-- Custom Styles -->
+    <link href="assets/css/custom/style.css" rel="stylesheet"/>
+    <link href="assets/css/custom/loader.css" rel="stylesheet"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135036555-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135036555-1');
+    </script>
+</head>
+<body>
+
+<nav class="navbar bg-dark navbar-expand-lg" id="sectionsNav">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="#">
+                <span class="material-icons">code</span> FunnySkAddon - Dokumentacja
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+                    aria-label="Przełącz nawigacje">
+                <span class="sr-only">Przełącz nawigacje</span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Wydarzenia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conditions.html">Warunki</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="effects.html">Efekty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="expressions.html">Wyrażenia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="types.html">Typy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="row">
+    <section class="main-container col-xl-10 row">
+        <div class="col-xl-auto items-list pt-1">
+            <h3 class="mt-0">Warunki</h3>
+            <hr>
+            <ol class="nav flex-column">
+                                    <li class="nav-item">
+                        <a href="#Can-guild-be-attacked">Can guild be attacked</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#Can-guild-build">Can guild build</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#Does-guild-exist">Does guild exist</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#Has-guild">Has guild</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#Is-guild-banned">Is guild banned</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#Is-guild-deputy">Is guild deputy</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#Is-guild-owner">Is guild owner</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#Is-guild-pvp-enabled">Is guild pvp enabled</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#Is-in-guild">Is in guild</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#Is-in-guild-region">Is in guild region</a>
+                    </li>
+                            </ol>
+        </div>
+        <div class="col">
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Can guild be attacked</b> <a name="Can-guild-be-attacked"
+                                                               href="#Can-guild-be-attacked">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0"> Sprawdza czy gildia mo?e by? zaatakowana</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    guild %guild/text/offlineplayer% can be attacked<br>
+guild %guild/text/offlineplayer% (cannot|can&prime;t) be attacked                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if guild &Prime;nazwaGildii&Prime; can be attacked:<br>
+if guild &Prime;nazwaGildii&Prime; cannot be attacked:                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Can guild build</b> <a name="Can-guild-build"
+                                                               href="#Can-guild-build">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Sprawdza czy gildia mo?e budowa?</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    guild %guild/text/offlineplayer% can build<br>
+guild %guild/text/offlineplayer% (cannot|can&prime;t) build                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if guild &Prime;nazwaGildii&Prime; can build:<br>
+if guild &Prime;nazwaGildii&Prime; cannot build:                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Does guild exist</b> <a name="Does-guild-exist"
+                                                               href="#Does-guild-exist">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Sprawdza czy gildia istnieje</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    guild %string% [does] exist[s]<br>
+guild %string% (doesn't|does not) exist[s]                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if guild "nazwaGildii" exists:<br>
+if guild "nazwaGildii" doesn't exist:                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Has guild</b> <a name="Has-guild"
+                                                               href="#Has-guild">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Sprawdza czy gracz jest w gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    [player] %offlineplayer% has guild<br>
+[player] %offlineplayer% (does not|doesn&prime;t) have guild                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if player has guild:<br>
+if player doesn&prime;t hava guild:                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Is guild banned</b> <a name="Is-guild-banned"
+                                                               href="#Is-guild-banned">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Sprawdza czy gildia jest zbanowana</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    guild %guild/text/offlineplayer% is banned<br>
+guild %guild/text/offlineplayer% is(n&prime;t| not)                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if guild &Prime;nazwaGildii&Prime; is banned:<br>
+if guild &Prime;nazwaGildii&Prime; isn&prime;t banned:                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Is guild deputy</b> <a name="Is-guild-deputy"
+                                                               href="#Is-guild-deputy">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Sprawdza czy gracz jest zast?pca gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    [player] %offlineplayer% is deputy<br>
+[player] %offlineplayer% is(n&prime;t| not) deputy                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if is deputy:<br>
+if player isn&prime;t deputy:                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Is guild owner</b> <a name="Is-guild-owner"
+                                                               href="#Is-guild-owner">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Sprawdza czy gracz jest za?o?ycielem gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    [player] %offlineplayer% is guild owner<br>
+[player] %offlineplayer% is(n&prime;t| not) guild owner                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if player is guild owner:<br>
+if player isn&prime;t guild owner:
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Is guild pvp enabled</b> <a name="Is-guild-pvp-enabled"
+                                                               href="#Is-guild-pvp-enabled">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Sprawdza czy gildia ma w??czone pvp</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    guild %guild/text/offlineplayer% pvp is (enabled|on)<br>
+guild %guild/text/offlineplayer% pvp is (disabled|off)                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if guild &Prime;nazwaGildi&Prime; pvp is enabled:<br>
+if guild &Prime;nazwaGildi&Prime; pvp is disabled:                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Is in guild</b> <a name="Is-in-guild"
+                                                               href="#Is-in-guild">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Sprawdza czy gracz jest w gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    [player] %offlineplayer% is in guild %guild/text/offlineplayer%<br>
+[player] %offlineplayer% is(n&prime;t| not) in guild %guild/text/offlineplayer%                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if player is in guild &Prime;nazwaGildi&Prime;:<br>
+if player isn&prime;t in guild &Prime;nazwaGildi&Prime;:                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item" id="experience_spawn">
+                    <h3><b>Is in guild region</b> <a name="Is-in-guild-region"
+                                                               href="#Is-in-guild-region">🔗</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Sprawdza czy gracz jest na terenie danej gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>Wzór</b></h4>
+                                <hr>
+                                <span>
+                                    [player] %player% is in guild region %guild/text/offlineplayer%<br>
+[player] %player% is(n&prime;t| not) in guild region %guild/text/offlineplayer%                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Przykłady użycia</b></h4>
+                                <hr>
+                                <span>
+                                    if player is in guild region &Prime;nazwaGildii&Prime;:<br>
+if player isn&prime;t in guild region &Prime;nazwaGildii&Prime;:                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </section>
+    <section class="main-container col-xl-2 d-none d-xl-block">
+        <div class="space-50"></div>
+		<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+		<!-- vertical -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-1590486928107196"
+			 data-ad-slot="6167686204"
+			 data-ad-format="vertical"
+			 data-full-width-responsive="true"></ins>
+		<script>
+			 (adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+    </section>
+</div>
+
+<div class="space-30"></div>
+
+<div class="text-center">
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" class="ml-auto mr-auto"></script>
+	<!-- vertical -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-1590486928107196"
+		 data-ad-slot="6167686204"
+		 data-ad-format="horizontal"
+		 data-full-width-responsive="true"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="space-20"></div>
+
+<hr>
+<div class="footer">
+    <div class="copyright">
+        <div class="space-20"></div>
+        &copy;
+        <script> document.write(new Date().getFullYear()) </script>
+        , Design by <a href="https://mlgroup.pl/" target="_blank">mlgroup.pl</a>
+
+        <div class="space-20"></div>
+    </div>
+</div>
+
+<div class="loader-wrapper">
+    <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<!-- Core JS Files -->
+<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+
+<!-- Material Kit & MDB -->
+<script src="assets/js/material-kit.js" type="text/javascript"></script>
+<script src="assets/js/mdb.js" type="text/javascript"></script>
+
+<!-- Plugins -->
+<script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/moment.min.js"></script>
+
+<!-- Custom -->
+<script src="assets/js/custom/loader.js" type="text/javascript"></script>
+
+</body>
+
+<!-- Mirrored from peridot.ct8.pl/funnyskaddon/conditions by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 09:41:51 GMT -->
+</html>

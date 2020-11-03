@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<!-- Mirrored from peridot.ct8.pl/funnyskaddon/home by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 09:41:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <title>FunnySkAddon - Dokumentacja - Wydarzenia</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+
+    <!-- Material Kit & Material Design -->
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    <link href="assets/css/mdb.css" rel="stylesheet"/>
+
+    <!-- Custom Styles -->
+    <link href="assets/css/custom/style.css" rel="stylesheet"/>
+    <link href="assets/css/custom/loader.css" rel="stylesheet"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135036555-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135036555-1');
+    </script>
+</head>
+<body>
+
+<nav class="navbar bg-dark navbar-expand-lg" id="sectionsNav">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="#">
+                <span class="material-icons">code</span> FunnySkAddon - Dokumentacja
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+                    aria-label="PrzeÅ‚Ä…cz nawigacje">
+                <span class="sr-only">PrzeÅ‚Ä…cz nawigacje</span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Wydarzenia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conditions.html">Warunki</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="effects.html">Efekty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="expressions.html">WyraÅ¼enia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="types.html">Typy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="row">
+    <section class="main-container col-xl-10 row">
+        <div class="col-xl-auto items-list pt-1">
+            <h3 class="mt-0">Wydarzenia</h3>
+            <hr>
+            <ol class="nav flex-column">
+                                    <li class="nav-item">
+                        <a href="#On-enter-guild-region">On enter guild region</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-ally-breakup">On guild ally breakup</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-ally-invitation-accept">On guild ally invitation accept</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-ban">On guild ban</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-base-change">On guild base change</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-create">On guild create</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-delete">On guild delete</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-enlarge">On guild enlarge</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-extend-validity">On guild extend validity</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-lives-change">On guild lives change</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-member-deputy">On guild member deputy</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-member-invite">On guild member invite</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-member-join">On guild member join</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-member-kick">On guild member kick</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-member-leader-change">On guild member leader change</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-member-leave">On guild member leave</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-member-revoke-invitation">On guild member revoke invitation</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-move">On guild move</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-rename">On guild rename</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-revoke-ally-invitation">On guild revoke ally invitation</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-send-ally-invitation">On guild send ally invitation</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-guild-unban">On guild unban</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-kill-points-change">On kill points change</a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="#On-leave-guild-region">On leave guild region</a>
+                    </li>
+                            </ol>
+        </div>
+        <div class="col">
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On enter guild region</b> <a name="On-enter-guild-region"
+                                                               href="#On-enter-guild-region">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany podczas wej?cia na teren gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] enter guild region                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - Gracz który wszed?‚ na teren gildii<br>
+guild - Gildia na któr? wszed?‚ gracz                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild ally breakup</b> <a name="On-guild-ally-breakup"
+                                                               href="#On-guild-ally-breakup">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany gdy sojusz gildii zostanie rozwi?zany</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild ally breakup                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz rozwi?zuj?cy sojusz<br>
+guild - gildia która rozwi?za?a sojusz<br>
+former ally - by?a sojusznicza gildia                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild ally invitation accept</b> <a name="On-guild-ally-invitation-accept"
+                                                               href="#On-guild-ally-invitation-accept">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany gdy gildia zaakceptuje zaproszenie do sojuszu gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild ally invitation accept                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz przyjmuj?cy zaproszenie<br>
+guild - gildia przyjmuj?cego<br>
+allied guild - gildia która zaakceptowa?a sojusz                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild ban</b> <a name="On-guild-ban"
+                                                               href="#On-guild-ban">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gildia zostanie zbanowana</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild ban                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz banuj?cy<br>
+guild - zbanowana gildia<br>
+reason - powód zbanowania gildii<br>
+time - czas na jaki gildia zosta?a zbanowana                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild base change</b> <a name="On-guild-base-change"
+                                                               href="#On-guild-base-change">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gildia zostanie przeniesiona</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    	 [On] guild base change                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz przenosz?cy gildie<br>
+guild - przeniesiona gildia                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild create</b> <a name="On-guild-create"
+                                                               href="#On-guild-create">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gildia zostanie za?o?ona</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild create                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz zak?adaj?cy gildie<br>
+guild - za?o?ona gildia                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild delete</b> <a name="On-guild-delete"
+                                                               href="#On-guild-delete">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gildia zostanie usuni?ta</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    	 [On] guild delete                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz usuwaj?cy gildie<br>
+guild - usuni?ta gildia                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild enlarge</b> <a name="On-guild-enlarge"
+                                                               href="#On-guild-enlarge">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gildia zostanie powi?kszona</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild enlarge                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz powi?kszaj?cy gildie<br>
+guild - gildia która zosta?a powi?kszona                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild extend validity</b> <a name="On-guild-extend-validity"
+                                                               href="#On-guild-extend-validity">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0"> Wywo?ywany kiedy wa?no?? gildii zostanie przed?u?ona</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild extend validity                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz przed?u?aj?cy wa?no?? gildii<br>
+guild - gildia której wa?no?? zosta?a przed?u?ona<br>
+extend time - czas o jaki wyd?u?ono wa?no?? gildii                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild lives change</b> <a name="On-guild-lives-change"
+                                                               href="#On-guild-lives-change">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy ilo?? ?y? gildii si? zmieni</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild lives change                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz atakuj?cy gildie (je?li jest)<br>
+guild - zaatakowana gildia<br>
+attacking guild - gildia atakuj?ca (je?li jest)<br>
+lives - nowa ilo?? ?y? zaatakowanej gildii                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild member deputy</b> <a name="On-guild-member-deputy"
+                                                               href="#On-guild-member-deputy">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy zostanie wybrany zast?pca gildii
+</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild member deputy                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz wybieraj?cy prze?o?onego gildii<br>
+guild - gildia w której wykonuje si? ten event<br>
+new deputy - nowy prze?o?ony gildii                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild member invite</b> <a name="On-guild-member-invite"
+                                                               href="#On-guild-member-invite">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy zaproszenie do gildi zostanie wysÅ‚ane</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild member invite                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz wysy?aj?cy zaproszenie<br>
+guild - gildia z której zaproszenie zosta?o wys?ane<br>
+possible member - gracz do którego zosta?o wys?ane zaproszenie                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild member join</b> <a name="On-guild-member-join"
+                                                               href="#On-guild-member-join">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gracz zaakceptuje zaproszenia do gildi</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild member join                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz akceptuj?cy zaproszenie<br>
+guild - gildia do której gracz zaakceptowa? zaproszenie                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild member kick</b> <a name="On-guild-member-kick"
+                                                               href="#On-guild-member-kick">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gracz zostanie wyrzucony z gildi</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild member kick                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz wyrzucaj?cy<br>
+guild - gildia z której gracz zosta? wyrzucony<br>
+kicked - gracz który zosta? wyrzucony z gildii                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild member leader change</b> <a name="On-guild-member-leader-change"
+                                                               href="#On-guild-member-leader-change">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy zostanie wybrany nowy za?o?yciel gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild member leader change                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz oddaj?cy lidera gildii<br>
+guild - gildia w której odbywa si? ten event<br>
+new leader - nowy lider gildii                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild member leave</b> <a name="On-guild-member-leave"
+                                                               href="#On-guild-member-leave">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gracz wyjdzie z gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild member leave                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz opuszczaj?cy gildie<br>
+guild - gildia któr? gracz opu?ci?                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild member revoke invitation</b> <a name="On-guild-member-revoke-invitation"
+                                                               href="#On-guild-member-revoke-invitation">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy zaproszenie do gildii zostanie anulowane</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild member revoke invitation                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz anuluj?cy zaproszenie<br>
+guild - gildia gracza który anulowa?o<br>
+possible member - gracz dla którego anulowano zaproszenie                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild move</b> <a name="On-guild-move"
+                                                               href="#On-guild-move">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gildia zostanie przeniesiona</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild move                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz przenosz?cy gildie<br>
+guild - gildia która zosta?a przeniesiona                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild rename</b> <a name="On-guild-rename"
+                                                               href="#On-guild-rename">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy nazwa gildii zostanie zmieniona</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild rename                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz zmieniaj?cy nazw?<br>
+guild - gildia której nazwa nazwa zosta?a zmieniona<br>
+new name - nowa nazwa gildii                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild revoke ally invitation</b> <a name="On-guild-revoke-ally-invitation"
+                                                               href="#On-guild-revoke-ally-invitation">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy zaproszenie do sojuszu gildii zostanie anulowane</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild revoke ally invitation                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz który anulowa? zaproszenie<br>
+guild - gildia gracza który anulowa? zaproszenie<br>
+possible ally - gildia dla której anulowano zaproszenie                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild send ally invitation</b> <a name="On-guild-send-ally-invitation"
+                                                               href="#On-guild-send-ally-invitation">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany gdy zaproszenie do sojuszu gildii zostanie wys?ane</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild send ally invitation                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz wysy?aj?cy zaproszenie<br>
+guild - gildia wysy?aj?cego zaproszenie<br>
+possible ally - gildia do której zosta?o wys?ane zaproszenie                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On guild unban</b> <a name="On-guild-unban"
+                                                               href="#On-guild-unban">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy gildia zostanie odbanowana</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] guild unban                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz odbanowuj?cy<br>
+guild - odbanowana gildia                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On kill points change</b> <a name="On-kill-points-change"
+                                                               href="#On-kill-points-change">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany kiedy ranking zostanie zmieniony poprzez zabicie gracza przez innego gracza</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] kill points change                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    killer - zabójca<br>
+victim - ofiara<br>
+change - zmiana punktów, ile gracze zyskali/stracili punków                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col col-xl-auto-auto doc-item">
+                    <h3><b>On leave guild region</b> <a name="On-leave-guild-region"
+                                                               href="#On-leave-guild-region">ðŸ”—</a>
+                    </h3>
+                    <div class="bg-light p-3">
+                        <h4 class="mt-0 mb-0">Wywo?ywany podczas wyj?cia z terenu gildii</h4>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xl-6 mb-3 mb-xl-0">
+                                <h4><b>WzÃ³r</b></h4>
+                                <hr>
+                                <span>
+                                    [On] leave guild region                                </span>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4><b>Parametry do pobrania</b></h4>
+                                <hr>
+                                <span>
+                                    player - gracz który opu?ci? teren gildii<br>
+guild - gildia której teren opu?ci? gracz                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </section>
+    <section class="main-container col-xl-2 d-none d-xl-block">
+        <div class="space-50"></div>
+		<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+		<!-- vertical -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-1590486928107196"
+			 data-ad-slot="6167686204"
+			 data-ad-format="vertical"
+			 data-full-width-responsive="true"></ins>
+		<script>
+			 (adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+    </section>
+</div>
+
+<div class="space-30"></div>
+
+<div class="text-center">
+	<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" class="ml-auto mr-auto"></script>
+	<!-- vertical -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-1590486928107196"
+		 data-ad-slot="6167686204"
+		 data-ad-format="horizontal"
+		 data-full-width-responsive="true"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+
+<div class="space-20"></div>
+
+<hr>
+<div class="footer">
+    <div class="copyright">
+        <div class="space-20"></div>
+        &copy;
+        <script> document.write(new Date().getFullYear()) </script>
+        , Design by <a href="https://mlgroup.pl/" target="_blank">mlgroup.pl</a>
+
+        <div class="space-20"></div>
+    </div>
+</div>
+
+<div class="loader-wrapper">
+    <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<!-- Core JS Files -->
+<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+
+<!-- Material Kit & MDB -->
+<script src="assets/js/material-kit.js" type="text/javascript"></script>
+<script src="assets/js/mdb.js" type="text/javascript"></script>
+
+<!-- Plugins -->
+<script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/moment.min.js"></script>
+
+<!-- Custom -->
+<script src="assets/js/custom/loader.js" type="text/javascript"></script>
+
+</body>
+
+<!-- Mirrored from peridot.ct8.pl/funnyskaddon/home by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 09:41:47 GMT -->
+</html>
